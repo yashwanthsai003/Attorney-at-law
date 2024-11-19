@@ -125,7 +125,7 @@ The project provides a template for a law firm's website with the following feat
 ## How to Run Locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/Attorney at law.git
+   git clone https://github.com/yashwanthsai003/Attorney-at-law.git
    ```
 2. Navigate to the project folder:
    ```bash
