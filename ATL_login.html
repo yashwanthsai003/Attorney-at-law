@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attorney at law</title>
+    <link rel="shortcut icon" href="https://png.pngtree.com/png-clipart/20200225/original/pngtree-law-logo-vector-with-judicial-balance-symbolic-of-justice-scale-in-png-image_5255566.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .s img{
+            margin-top: 12px;
+            height: 33px;
+            width: 33px;
+        }
+        body{
+            background-image: url('https://images.pexels.com/photos/925743/pexels-photo-925743.jpeg?auto=compress&cs=tinysrgb&w=600');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            font-family: 'Montserrat', sans-serif;
+        }
+        h1{
+            font-weight: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        p{
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: 0.5px;
+            margin: 20px 0 ;
+        }
+        span{
+            font-size: 0.9rem;
+            margin-bottom: 19px;
+            margin-top: 10px;
+        }
+        a{
+            color: rgb(49, 49, 49);
+            font-size: 14px;
+            text-decoration: none;
+            margin: 15px 0;
+        }
+        button{
+            cursor: pointer;
+            margin-top: 6px;
+            margin-bottom: 5px;
+            border-radius: 20px;
+            border:1px solid rgb(255, 33, 70);
+            background-color: rgb(255, 33, 70);
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 12px 48px;
+            letter-spacing: 1px;
+            transition: transform 80ms ease-in;
+            box-shadow: rgb(181, 19, 46) 2px 1px 2px;
+        }
+        form h1{
+            margin-bottom: 12px;
+            text-decoration-line: underline;
+            text-decoration-color:  rgb(124, 186, 218);
+        }
+        form{
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 50px;
+            height: 100%;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+        .pop{
+            background-color: white;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            text-align: center;
+            border-radius: 2%;
+            position: relative;
+            overflow: hidden;
+            width: 768px;
+            max-width: 100%;
+            min-height: 480px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 100px;
+        }
+        .pop1, .pop2 {
+            flex: 1; /* Equal distribution of space */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .pop1 form {
+            max-width: 50%; /* Ensure the form doesn't exceed the container width */
+            background-color: aliceblue;
+        }
+        .pop2a {
+            background-color: rgb(50, 47, 38);
+            color: white;
+            height: 100%; /* Occupy full height of parent container */
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 40px;
+            text-align: center;
+        }
+        .row{
+            height: 45px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .row input{
+            height: 100%;
+            width: 100%;
+            outline: none;
+            padding-left: 60px;
+            border-radius: 5px;
+            border: 1px solid lightgrey;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        .row input:focus{
+            border-color: #16a085;
+            box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
+        }
+        .row input::placeholder{
+            color: #999;
+        }
+        .row i{
+            position: absolute;
+            width: 47px;
+            height: 100%;
+            color: #fff;
+            font-size: 18px;
+            background: #16a085;
+            border: 1px solid #16a085;
+            border-radius: 5px 0 0 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pass{
+            margin-top: 10px;
+        }
+
+        .pass a{
+            color: #16a085;
+            font-size: 17px;
+            text-decoration: none;
+        }
+
+        .pass a:hover{
+            text-decoration: underline;
+        }
+
+        .signup-link{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 17px;
+        }
+        .signup-link a{
+            color: #16a085;
+            text-decoration: none;
+        }
+        .signup-link a:hover{
+            text-decoration: underline;
+        }
+        
+        img{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="pop">
+        <div class="pop1 form">
+            <form action="#" id="loginForm">
+                <h1>Login</h1>
+                <div class="SM">
+                    <div style="letter-spacing:30px;">
+                        <a href="#" class="s"><img src="https://cdn-teams-slug.flaticon.com/google.jpg" alt="Google Icon"></a>
+                        <a href="#" class="s"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRabu-KWNCswEIh_0FMoURW5MfNzWrbMTxJU3Egt9WVs66eKNCtBkCbr1BmIUJX-3jueC4&usqp=CAU" alt="Facebook Icon"></a>
+                        <a href="#" class="s"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3HNrFOSbMmOzHJPsCQ6WNK80zQ7jhLzOnebr-2uBg_Q&s" alt="Twitter Icon"></a>
+                    </div>
+                </div>
+                <span>or use account</span>
+                <div class="row">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username" placeholder="Email" required>
+                </div>
+                <div class="row">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <div class="pass"><a href="#">Forgot password?</a></div>
+                <div class="signup-link">Not a member? <a href="ATL_signin.html" style="font-size: 14px;">Signup now</a></div>
+            </form>
+        </div>
+        <div class="pop2">
+            <div class="pop2a form">
+                <img src="https://png.pngtree.com/png-vector/20191009/ourmid/pngtree-justice-scales-lawyer-logo-scales-of-justice-sign-icon-court-of-png-image_1802624.jpg"
+                class="logo" alt="Attorney At Law Logo">
+                <h1>Attorney At Law</h1>
+                <p>To get started, schedule a free initial consultation with the attorney of your choice.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginForm = document.getElementById('loginForm');
+
+            // Add event listener for form submission
+            loginForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                // Get user input (email and password)
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+
+                // Retrieve user data from localStorage
+                const userDataString = localStorage.getItem('userDetails');
+
+                // Check if user data exists
+                if (userDataString) {
+                    // Parse user data from JSON string
+                    const userData = JSON.parse(userDataString);
+
+                    // Check if the entered username (email) and password match
+                    if (username === userData.email && password === userData.password) {
+                        // Authentication successful
+                        // You can redirect the user to another page or perform other actions
+                        alert('Login successful!');
+
+                        localStorage.setItem('isLoggedIn', 'true');
+                        // Redirect the user to the profile page or dashboard
+                        window.location.href = 'ATL.html';
+                    } else {
+                        // Invalid username or password
+                        alert('Invalid username or password');
+                    }
+                } else {
+                    // User data not found
+                    alert('User data not found. Please sign up.');
+                    window.location.href = 'ATL_signin.html';
+                }
+            });
+        });
+    </script>
+   
+</body>
+</html>

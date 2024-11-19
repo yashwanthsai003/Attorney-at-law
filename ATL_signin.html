@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attorney at law</title>
+    <link rel="shortcut icon" href="https://png.pngtree.com/png-clipart/20200225/original/pngtree-law-logo-vector-with-judicial-balance-symbolic-of-justice-scale-in-png-image_5255566.jpg" type="image/x-icon">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        .container {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .card { 
+            height: 100%;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.6);
+            width: 36%;
+            background-color: aliceblue;
+            padding: 10px 30px;
+        }
+        .card_title {
+            margin-top: 50px;
+            text-align: center;
+            padding: 10px;
+        }
+        .card_title h1 {
+            font-size: 26px;
+            font-weight: bold;
+        }
+        .content form .user-details{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0 12px 0;
+        }
+        .pl
+        form .user-details .input-box{
+          margin-bottom: 15px;
+          width: 100%;
+        }
+        form .input-box span.details{
+          display: block;
+          font-weight: 500;
+          font-size: 17px;
+          margin:5px, 0px;
+        }
+        .user-details .input-box input{
+          height: 45px;
+          width: 98%;
+          outline: none;
+          font-size: 16px;
+          border-radius: 5px;
+          padding-left: 15px;
+          border: 1px solid #ccc;
+          border-bottom-width: 2px;
+          transition: all 0.3s ease;
+        }
+        .user-details .input-box input:focus,
+        .user-details .input-box input:valid{
+          border-color: #9b59b6;
+        }
+        form .gender-details .gender-title{
+          font-size: 20px;
+          font-weight: 500;
+        }
+        form .category{
+          display: flex;
+          width: 80%;
+          margin: 5px 0 ;
+          justify-content: space-between;
+        }
+        form .category label{
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+        }
+        form .category label .dot{
+          height: 18px;
+          width: 18px;
+          border-radius: 50%;
+          margin-right: 10px;
+          background: #d9d9d9;
+          border: 5px solid transparent;
+          transition: all 0.3s ease;
+        }
+        #male:checked + .dot.one,
+        #female:checked + .dot.two,
+        #other:checked + .dot.three{
+          background: #9b59b6;
+          border-color: #d9d9d9;
+        }
+        form input[type="radio"]{
+          display: none;
+        }
+        form .button{
+          height: 45px;
+          margin: 35px 0
+        }
+        form .button input{
+          height: 100%;
+          width: 100%;
+          border-radius: 5px;
+          border: none;
+          color: #fff;
+          font-size: 18px;
+          font-weight: 500;
+          letter-spacing: 1px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        }
+        form .button input:hover{
+          /* transform: scale(0.99); */
+          background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+          }
+        .ATL{
+          background: linear-gradient(
+rgba(255,255,255,0.1),
+rgba(255,255,255,0.1)
+),url('https://cdn.pixabay.com/photo/2016/07/11/11/10/law-1509436_1280.jpg');
+          background-size: cover;
+          background-position: center;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          width: 64%;
+        }
+        .ele{
+          width: 600px;
+        }
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="ATL">
+      <div class="ele">
+        <img src="https://png.pngtree.com/png-vector/20191009/ourmid/pngtree-justice-scales-lawyer-logo-scales-of-justice-sign-icon-court-of-png-image_1802624.jpg" 
+          width="170px" alt="Logo can't be loaded">
+        <h1 style="color: white;">Attorney At Law</h1>
+        <p style="color: antiquewhite; font-size: 18px;">To get started, schedule a free initial consultation with the attorney of your choice.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card_title">
+        <h1>Create Account</h1>
+        <span>Already have an account? <a href="ATL_login.html">Sign In</a></span>
+      </div>
+      <div class="form">
+        <form id="registrationForm" action="#" onsubmit="return validateForm()">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" id="fullName" placeholder="Enter your name" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="email" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="tel" id="phoneNumber" placeholder="Enter your number" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Password</span>
+                <input type="password" id="password" placeholder="Enter your password" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Confirm Password</span>
+                <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+              </div>
+            </div>
+            <div class="gender-details">
+              <span class="gender-title">Gender</span>
+              <div class="category">
+                <label for="male">
+                <input type="radio" name="gender" id="male" required>
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="female">
+                <input type="radio" name="gender" id="female" required>
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label>
+              <label for="other">
+                <input type="radio"name="gender" id="other" required>
+                <span class="dot three"></span>
+                <span class="gender">Prefer not to say</span>
+                </label>
+              </div>
+            </div>
+            <div class="button">
+              <input type="submit" value="Register">
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Get form input values
+      const fullName = document.getElementById('fullName').value;
+      const email = document.getElementById('email').value;
+      const phoneNumber = document.getElementById('phoneNumber').value;
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+      const gender = document.querySelector('input[name="gender"]:checked').value;
+
+      // Validate password match
+      if (password !== confirmPassword) {
+        alert('Passwords do not match');
+        return;
+      }
+
+      // Create user object
+      const user = {
+        fullName: fullName,
+        email: email,
+        phoneNumber: phoneNumber,
+        password: password,
+        gender: gender
+      };
+
+      // Store user object in localStorage
+      localStorage.setItem('userDetails', JSON.stringify(user));
+
+      // Redirect to login page
+      window.location.href = 'ATL_login.html';
+    });
+  </script>
+
+</body>
+</html>
