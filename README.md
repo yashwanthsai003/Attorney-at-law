@@ -15,6 +15,30 @@ The project provides a template for a law firm's website with the following feat
 
 ---
 
+## File Structure
+```
+AttorneyAtLawWebsite/
+├── ATL.html         
+├── ATL.css           
+├── ATL_login.html    
+└── ATL_signin.html   
+```
+
+---
+
+## How to Run Locally
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yashwanthsai003/Attorney-at-law.git
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd AttorneyAtLawWebsite
+   ```
+3. Open `ATL.html` in any modern web browser.
+
+---
+
 ## Features
 
 1. **Homepage**
@@ -122,27 +146,3 @@ The project provides a template for a law firm's website with the following feat
   
 ---
 
-## How to Run Locally
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yashwanthsai003/Attorney-at-law.git
-   ```
-2. Navigate to the project folder:
-   ```bash
-   cd AttorneyAtLawWebsite
-   ```
-3. Open `ATL.html` in any modern web browser.
-
----
-
-## File Structure
-```
-AttorneyAtLawWebsite/
-├── ATL.html          # Main HTML file
-├── ATL.css           # Stylesheet for the website
-├── ATL_login.html    # Login page
-├── ATL_signin.html   # Sign-in page
-└── assets/           # Folder for images and additional assets
-```
-
----
